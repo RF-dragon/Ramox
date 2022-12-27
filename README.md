@@ -20,7 +20,7 @@ python -m pip install flask -i https://pypi.tuna.tsinghua.edu.cn/simple -U
 4. 运行[Daen注入器](DaenWxHook/Daen%E6%B3%A8%E5%85%A5%E5%99%A8.exe)。该程序会启动微信并将DaenWxHook.dll注入微信进程。其中，文件目录请填写微信所在的文件夹，DLL路径请填写[DaenWxHook.dll](DaenWxHook/DaenWxHook.dll)的文件路径，进程参数请填写callBackUrl=http://localhost:8089/wechat&port=8055&decryptImg=1。
 
 您也可以自行修改[server.py](server.py)和[ramox.py](ramox.py)的代码，以实现更多功能。
-请注意，对本程序的使用可能违反[腾讯微信软件许可及服务协议](https://weixin.qq.com/agreement)。请遵循协议使用。本人不承担由于使用本程序而违反[腾讯微信软件许可及服务协议](https://weixin.qq.com/agreement)所带来的法律责任。
+请注意，对本程序的滥用可能违反[腾讯微信软件许可及服务协议](https://weixin.qq.com/agreement)，请遵循协议使用。本人不承担由于使用本程序而违反[腾讯微信软件许可及服务协议](https://weixin.qq.com/agreement)所带来的法律责任。
 
 ### 参考文献
 Daen. (2022). _WeChat HOOK HTTP_. https://www.apifox.cn/apidoc/project-1222856
