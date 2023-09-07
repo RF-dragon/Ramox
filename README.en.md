@@ -66,7 +66,45 @@ pip install -r requirements.txt
 
 ## Run
 
-Simply run by double clicking [run.bat](run.bat).
+Simply run by double clicking [run.bat](run.bat). After running, all message will be sent to Windows notification center in a pretty form. You can reply to those message in notification boxes conveniently or manully send messages in the terminal.
+
+### Operate with Windows terminal
+
+Detailed function description can be viewed in [server.py](server.py).
+
+#### Show the current chat
+
+```python
+def show_context() -> None:...
+```
+Example:
+```bash
+In [1]: show_context()
+Current context: [文件传输助手].
+```
+
+#### Switch to another chat
+
+```python
+def switch_context(chat: Union[str, None] = None) -> None:...
+```
+Example:
+```bash
+In [2]: switch_context('RFdragon')
+
+In [3]: show_context()
+Current context: [RFdragon].
+```
+
+#### Send message to a chat
+
+```python
+def send(msg: str, chat: Union[str, None] = None, msg_type: str = 'msg') -> None:
+```
+Example:
+```bash
+In [4]: send('Hello world!', chat='RFdragon')
+```
 
 ## Acknowledgements
 

@@ -17,6 +17,7 @@
 - 接收并显示文字消息
 - 接收并显示图片
 - 接收文件、显示文件名、一键打开文件
+- 自由选择在终端或通知中心中发送消息
 - 视频、语音等均按照文件处理
 
 ### 待开发功能
@@ -64,9 +65,47 @@
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-## 运行
+## 使用方法
 
-双击[run.bat](run.bat)即可开始运行。
+双击[run.bat](run.bat)即可开始运行。运行后，所有信息会以美观的形式被转发到Windows通知中心。你可以在收到通知时快捷地进行回复，或在终端中手动发送信息。
+
+### 使用Windows终端进行操作
+
+详细的函数说明可以在[server.py](server.py)中查看。
+
+#### 查看当前聊天对象
+
+```python
+def show_context() -> None:...
+```
+使用示例：
+```bash
+In [1]: show_context()
+Current context: [文件传输助手].
+```
+
+#### 切换聊天对象
+
+```python
+def switch_context(chat: Union[str, None] = None) -> None:...
+```
+使用示例：
+```bash
+In [2]: switch_context('RFdragon')
+
+In [3]: show_context()
+Current context: [RFdragon].
+```
+
+#### 向聊天对象发送信息
+
+```python
+def send(msg: str, chat: Union[str, None] = None, msg_type: str = 'msg') -> None:
+```
+使用示例：
+```bash
+In [4]: send('Hello world!', chat='RFdragon')
+```
 
 ## 致谢
 
