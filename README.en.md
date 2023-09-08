@@ -4,12 +4,12 @@ Language: [Simplified Chinese](README.md) | English
 
 ## Project introduction
 
-This project is based on `wxpy` and `win11toast`. It is a WeChat helper that sends all WeChat messages received to Windows 11 notification center.
+This project is based on `wxpy` and `win11toast`. It is a WeChat helper that sends all WeChat messages received to the Windows 11 notification center.
 
 ### Project features
 
 - Concise, pretty, light-weighted
-- Quick and convenient replication to messages received
+- Quick and convenient replication of messages received
 - Highly customizable, can implement functions like auto replying and auto accepting friend requests by modifying the code a little bit
 
 ### Functions supported
@@ -24,12 +24,21 @@ This project is based on `wxpy` and `win11toast`. It is a WeChat helper that sen
 ### Functions to be implemented
 
 - One-click playing recordings
+<<<<<<< HEAD
 - Displaying history messages
+=======
+- Quickly send files, images, and videos
+>>>>>>> 0256edd06ec34876761aedb9d62995e2059e8e6a
 
 ### Functions not currently planned to implement
 
 - UI
+<<<<<<< HEAD
 - Sending or receiving name cards, money transfer and maps
+=======
+- Displaying history messages
+- Sending or receiving name cards, money transfers, and maps
+>>>>>>> 0256edd06ec34876761aedb9d62995e2059e8e6a
 - Moment
 
 ### Effect
@@ -52,14 +61,14 @@ This project is based on `wxpy` and `win11toast`. It is a WeChat helper that sen
 
 ### Notice
 
-The program can only be used for learning purpose, it should NOT be used for commercial purposes. Abuse of this program might lead to violation of Agreement on Software License and Service of Tencent Weixin. Please only use this program according to the agreement. We will not be responsible of any legal consequences brought by violation of Agreement on Software License and Service of Tencent Weixin.
+The program can only be used for learning purposes, it should NOT be used for commercial purposes. Abuse of this program might lead to a violation of the Agreement on Software License and Service of Tencent Weixin. Please only use this program according to the agreement. We will not be responsible for any legal consequences brought by the violation of the Agreement on Software License and Service of Tencent Weixin.
 
 ## Development environment
 
 - Windows 11 25330.1000
 - Python 3.8
 
-Not tested in other systems or environments. A successful deploying is not guaranteed.
+Not tested in other systems or environments. A successful deployment is not guaranteed.
 
 ## Installation
 
@@ -71,7 +80,49 @@ pip install -r requirements.txt
 
 ## Run
 
+<<<<<<< HEAD
 Simply run by double clicking [run.bat](run.bat). After running, all message will be sent to Windows notification center in a pretty form. You can reply to those message in notification boxes conveniently or actively send messages by pressing `Ctrl+Alt+W`.
+=======
+Simply run by double clicking [run.bat](run.bat). After running, all messages will be sent to the Windows notification center in a pretty form. You can reply to those messages in notification boxes conveniently or manually send messages in the terminal.
+
+### Operate with Windows terminal
+
+Detailed function description can be viewed in [server.py](server.py).
+
+#### Show the current chat
+
+```python
+def show_context() -> None:...
+```
+Example:
+```bash
+In [1]: show_context()
+Current context: [文件传输助手].
+```
+
+#### Switch to another chat
+
+```python
+def switch_context(chat: Union[str, None] = None) -> None:...
+```
+Example:
+```bash
+In [2]: switch_context('RFdragon')
+
+In [3]: show_context()
+Current context: [RFdragon].
+```
+
+#### Send a message to a chat
+
+```python
+def send(msg: str, chat: Union[str, None] = None, msg_type: str = 'msg') -> None:
+```
+Example:
+```bash
+In [4]: send('Hello world!', chat='RFdragon')
+```
+>>>>>>> 0256edd06ec34876761aedb9d62995e2059e8e6a
 
 ## Acknowledgements
 
@@ -80,6 +131,7 @@ Simply run by double clicking [run.bat](run.bat). After running, all message wil
 - [pywin32](https://github.com/mhammond/pywin32)
 - [win11toast](https://github.com/GitHub30/win11toast)
 - [wxpy](https://github.com/youfou/wxpy)
+<<<<<<< HEAD
 
 # Update log
 
@@ -90,3 +142,6 @@ Simply run by double clicking [run.bat](run.bat). After running, all message wil
 - Add the function of actively send messages with a notification window.
 - Can access images and files in the clipboard now.
 - Remove the function of using the terminal to send messages. It is completely replaced by active message sending.
+=======
+- [win11toast](https://github.com/GitHub30/win11toast)
+>>>>>>> 0256edd06ec34876761aedb9d62995e2059e8e6a
