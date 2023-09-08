@@ -17,7 +17,7 @@ This project is based on `wxpy` and `win11toast`. It is a WeChat helper that sen
 - Receive and display text messages
 - Receive and display images
 - Receive files, display file names, one-click opening files
-- Quickly reply texts, images, files or videos.
+- Quickly reply with texts, images, files, or videos.
 - Use `Ctrl+Alt+W` to call a notification that allows you to actively send messages.
 - Videos and recordings are dealt the same way as files
 
@@ -29,7 +29,7 @@ This project is based on `wxpy` and `win11toast`. It is a WeChat helper that sen
 ### Functions not currently planned to implement
 
 - UI
-- Sending or receiving name cards, money transfer and maps
+- Sending or receiving name cards, money transfers, and maps
 - Moment
 
 ### Effect
@@ -71,7 +71,7 @@ pip install -r requirements.txt
 
 ## Run
 
-Simply run by double clicking [run.bat](run.bat). After running, all message will be sent to Windows notification center in a pretty form. You can reply to those message in notification boxes conveniently or actively send messages by pressing `Ctrl+Alt+W`.
+Simply run by double clicking [run.bat](run.bat). After running, all messages will be sent to the Windows notification center in a pretty form. You can reply to those messages in notification boxes conveniently or actively send messages by pressing `Ctrl+Alt+W`.
 
 ## Acknowledgements
 
@@ -86,7 +86,7 @@ Simply run by double clicking [run.bat](run.bat). After running, all message wil
 ## 2023.9.8
 
 - Move the CSDN tutorial version to the branch `tutorial`.
-- Add the function of quickly replying images, files and videos.
-- Add the function of actively send messages with a notification window.
+- Add the function of quickly replying to images, files, and videos.
+- Add the function of actively sending messages with a notification window.
 - Can access images and files in the clipboard now.
 - Remove the function of using the terminal to send messages. It is completely replaced by active message sending.
