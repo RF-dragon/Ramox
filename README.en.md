@@ -1,6 +1,6 @@
 # Ramox
 
-Language: [Simplified Chinese](README.md) | English
+Language: [简体中文](README.md) | English
 
 ## Project introduction
 
@@ -81,7 +81,7 @@ Simply run by double clicking [run.bat](run.bat). After running, all messages wi
 - [win11toast](https://github.com/GitHub30/win11toast)
 - [wxpy](https://github.com/youfou/wxpy)
 
-# Update log
+# Change log
 
 ## 2023.9.8
 
