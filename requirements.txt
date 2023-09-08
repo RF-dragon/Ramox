@@ -1,2 +1,6 @@
+keyboard==0.13.5
+Pillow==10.0.0
+pyperclip==1.8.2
+pywin32==306
 win11toast==0.32
 wxpy==0.3.9.8

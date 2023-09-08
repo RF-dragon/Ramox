@@ -17,34 +17,38 @@
 - 接收并显示文字消息
 - 接收并显示图片
 - 接收文件、显示文件名、一键打开文件
-- 自由选择在终端或通知中心中发送消息
-- 视频、语音等均按照文件处理
+- 快速回复图片、文件或视频
+- 使用`Ctrl+Alt+W`主动呼出通知中心弹窗发送消息
+- 视频、语音等消息均按照文件处理
 
 ### 待开发功能
 
 - 一键播放语音
-- 快速发送文件、图片、视频等
+- 显示历史消息记录
 
 ### 暂不计划开发
 
 - 图形用户界面
-- 历史消息记录
 - 名片、转账、地图等消息的收发
 - 朋友圈
 
 ### 效果展示
 
-- 文字消息
+- 回复文字消息
 
 ![Text](Images/text.png)
 
-- 图片
+- 回复图片
 
 ![Image](Images/image.png)
 
-- 文件
+- 回复文件
 
-![Image](Images/file.png)
+![File](Images/file.png)
+
+- 主动发送视频
+
+![Video](Images/video.png)
 
 ### 注意事项
 
@@ -67,47 +71,22 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 ## 使用方法
 
-双击[run.bat](run.bat)即可开始运行。运行后，所有信息会以美观的形式被转发到Windows通知中心。你可以在收到通知时快捷地进行回复，或在终端中手动发送信息。
-
-### 使用Windows终端进行操作
-
-详细的函数说明可以在[server.py](server.py)中查看。
-
-#### 查看当前聊天对象
-
-```python
-def show_context() -> None:...
-```
-使用示例：
-```bash
-In [1]: show_context()
-Current context: [文件传输助手].
-```
-
-#### 切换聊天对象
-
-```python
-def switch_context(chat: Union[str, None] = None) -> None:...
-```
-使用示例：
-```bash
-In [2]: switch_context('RFdragon')
-
-In [3]: show_context()
-Current context: [RFdragon].
-```
-
-#### 向聊天对象发送信息
-
-```python
-def send(msg: str, chat: Union[str, None] = None, msg_type: str = 'msg') -> None:
-```
-使用示例：
-```bash
-In [4]: send('Hello world!', chat='RFdragon')
-```
+双击[run.bat](run.bat)即可开始运行。运行后，所有信息会以美观的形式被转发到Windows通知中心。你可以在收到通知时快捷地进行回复，使用`Ctrl+Alt+W`呼出一个通知中心弹窗并主动发送消息。
 
 ## 致谢
 
-- [wxpy](https://github.com/youfou/wxpy)
+- [keyboard](https://github.com/boppreh/keyboard)
+- [pyperclip](https://github.com/asweigart/pyperclip)
+- [pywin32](https://github.com/mhammond/pywin32)
 - [win11toast](https://github.com/GitHub30/win11toast)
+- [wxpy](https://github.com/youfou/wxpy)
+
+# 更新日志
+
+## 2023.9.8
+
+- 将CSDN教程版本移动至`tutorial`分支。
+- 添加了快捷回复图片、文件和视频的功能。
+- 添加了主动呼出菜单并发送消息的功能。
+- 现在可以直接发送剪贴板中的图片和文件了。
+- 删除了使用命令行发送消息的功能。它们已经被主动呼出菜单替代了。

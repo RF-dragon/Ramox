@@ -17,17 +17,18 @@ This project is based on `wxpy` and `win11toast`. It is a WeChat helper that sen
 - Receive and display text messages
 - Receive and display images
 - Receive files, display file names, one-click opening files
+- Quickly reply texts, images, files or videos.
+- Use `Ctrl+Alt+W` to call a notification that allows you to actively send messages.
 - Videos and recordings are dealt the same way as files
 
 ### Functions to be implemented
 
 - One-click playing recordings
-- Quickly send files, images and videos
+- Displaying history messages
 
 ### Functions not currently planned to implement
 
 - UI
-- Displaying history messages
 - Sending or receiving name cards, money transfer and maps
 - Moment
 
@@ -44,6 +45,10 @@ This project is based on `wxpy` and `win11toast`. It is a WeChat helper that sen
 - Files
 
 ![Image](Images/file.png)
+
+- Actively send videos
+
+![Video](Images/video.png)
 
 ### Notice
 
@@ -66,47 +71,22 @@ pip install -r requirements.txt
 
 ## Run
 
-Simply run by double clicking [run.bat](run.bat). After running, all message will be sent to Windows notification center in a pretty form. You can reply to those message in notification boxes conveniently or manully send messages in the terminal.
-
-### Operate with Windows terminal
-
-Detailed function description can be viewed in [server.py](server.py).
-
-#### Show the current chat
-
-```python
-def show_context() -> None:...
-```
-Example:
-```bash
-In [1]: show_context()
-Current context: [文件传输助手].
-```
-
-#### Switch to another chat
-
-```python
-def switch_context(chat: Union[str, None] = None) -> None:...
-```
-Example:
-```bash
-In [2]: switch_context('RFdragon')
-
-In [3]: show_context()
-Current context: [RFdragon].
-```
-
-#### Send message to a chat
-
-```python
-def send(msg: str, chat: Union[str, None] = None, msg_type: str = 'msg') -> None:
-```
-Example:
-```bash
-In [4]: send('Hello world!', chat='RFdragon')
-```
+Simply run by double clicking [run.bat](run.bat). After running, all message will be sent to Windows notification center in a pretty form. You can reply to those message in notification boxes conveniently or actively send messages by pressing `Ctrl+Alt+W`.
 
 ## Acknowledgements
 
-- [wxpy](https://github.com/youfou/wxpy)
+- [keyboard](https://github.com/boppreh/keyboard)
+- [pyperclip](https://github.com/asweigart/pyperclip)
+- [pywin32](https://github.com/mhammond/pywin32)
 - [win11toast](https://github.com/GitHub30/win11toast)
+- [wxpy](https://github.com/youfou/wxpy)
+
+# Update log
+
+## 2023.9.8
+
+- Move the CSDN tutorial version to the branch `tutorial`.
+- Add the function of quickly replying images, files and videos.
+- Add the function of actively send messages with a notification window.
+- Can access images and files in the clipboard now.
+- Remove the function of using the terminal to send messages. It is completely replaced by active message sending.
