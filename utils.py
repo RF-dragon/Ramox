@@ -1,3 +1,7 @@
+# Copyright (C) 2023. Weilong Guan.
+
+# See <server.py> for a full notice of the GPL-3 License.
+
 import os
 from typing import Union
 

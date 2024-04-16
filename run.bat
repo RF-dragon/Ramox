@@ -1,3 +1,3 @@
 python -m server
-echo Server closed.
+echo Program terminated.
 pause
