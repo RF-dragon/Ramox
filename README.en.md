@@ -83,10 +83,6 @@ Simply run by double clicking [run.bat](run.bat). After running, all messages wi
 
 # Change log
 
-## 2023.9.8
+## 2024.4.16
 
-- Move the CSDN tutorial version to the branch `tutorial`.
-- Add the function of quickly replying to images, files, and videos.
-- Add the function of actively sending messages with a notification window.
-- Can access images and files in the clipboard now.
-- Remove the function of using the terminal to send messages. It is completely replaced by active message sending.
+- Add [run.vbs](run.vbs). Users can put [run.vbs](run.vbs) into the Windows startup folder to automatically invoke the program when starting Windows without displaying it in the task bar.

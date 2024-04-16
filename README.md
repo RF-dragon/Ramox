@@ -83,10 +83,6 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 更新日志
 
-## 2023.9.8
+## 2024.4.16
 
-- 将CSDN教程版本移动至`tutorial`分支。
-- 添加了快捷回复图片、文件和视频的功能。
-- 添加了主动呼出菜单并发送消息的功能。
-- 现在可以直接发送剪贴板中的图片和文件了。
-- 删除了使用命令行发送消息的功能。它们已经被主动呼出菜单替代了。
+- 添加[run.vbs](run.vbs)。用户可以在开机启动项文件夹中添加[run.vbs](run.vbs)使程序开机自启动同时不显示在任务栏中。
