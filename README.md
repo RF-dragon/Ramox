@@ -2,6 +2,10 @@
 
 语言：简体中文 | [English](README.en.md)
 
+# 通知
+
+近期由于学业繁忙，因此项目疏于维护。如果有哪位朋友愿意共同开发维护项目的欢迎发送邮件至weilong.guan@student.manchester.ac.uk，或在项目中提起issue。感谢大家的支持！
+
 ## 项目介绍
 
 本项目为一个基于`wxpy`和`win11toast`的将微信转发到Windows 11通知中心并支持快捷回复的微信机器人。
@@ -82,6 +86,10 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 - [wxpy](https://github.com/youfou/wxpy)
 
 # 更新日志
+
+## 2024.7.18
+
+- 修改README。
 
 ## 2024.4.16
 
